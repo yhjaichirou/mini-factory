@@ -1,0 +1,28 @@
+<view class="container">
+  <block>
+    <view class="logo-view"> 
+        <image class="title" src="/image/logo.jpg"></image>
+    </view>
+
+    <view class="content">
+      <view class="hd" style="transform:rotateZ({{angle}}deg);">
+        <image class="logo" src="{{userInfo.avatarUrl}}"></image>
+        <image class="wave" src="/image/wave.png" mode="scaleToFill"></image>
+        <!-- <image class="wave wave-bg" src="/image/wave.png" mode="aspectFill"></image> -->
+      </view>
+      <view class="bd">
+        <image class="smalltitle" src="/image/confirm-word1.png"></image>
+        <view wx:if="{{isLogin == 1}}">
+          <view class="confirm-btn" bindtap='goSign' wx:if="{{userInfo.avatarUrl}}">
+            <button class="confirm-btn" >立即进入</button>
+          </view>
+          <button class="confirm-btn"  open-type="getUserInfo" bindgetuserinfo="getUserInfo" wx:else>点击授权</button>
+        </view>
+        <view wx:else>
+          <button class="confirm-btn" bindtap='goToQuery'>立即进入</button>
+        </view>
+        <text class="copyright">© 2020 乌兰察布市联通</text>
+      </view>
+    </view>
+  </block>
+</view>

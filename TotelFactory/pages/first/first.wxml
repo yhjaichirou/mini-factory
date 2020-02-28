@@ -1,0 +1,24 @@
+<!--pages/first/first.wxml-->
+<view class="body">
+  <view class="main">
+    <view class="bm-line t-headr">
+      今日订单次数
+    </view>
+    <view class="bm-line t-con">
+      <view class="t-con-v t-con-left">正常订单：20</view>
+      <view class="t-con-v t-con-right">
+        异常订单：2
+      </view>
+    </view>
+  </view>
+  <view class="play">
+    洗涤
+  </view>
+
+</view>
+
+ <!-- <i-row>
+    <i-col span="8" i-class="col-class center bgc-primary">col-8</i-col>
+    <i-col span="8" i-class="col-class center">col-8</i-col>
+    <i-col span="8" i-class="col-class center">col-8</i-col>
+</i-row> -->

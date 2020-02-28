@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "i-button": "/assembly/iview/dist/button/index",
+    "i-row": "/assembly/iview/dist/row/index",
+    "i-col": "/assembly/iview/dist/col/index"
+  },
+    "navigationBarBackgroundColor": "#5cadff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "工厂洗衣",
+    "backgroundColor": "#5cadff",
+    "backgroundTextStyle": "light"
+
+}

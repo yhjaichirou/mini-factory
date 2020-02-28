@@ -1,0 +1,12 @@
+
+
+/* bg color item */
+.bgc-primary{
+  background-color: #2d8cf0;
+}
+.bgc-Light-Primary{
+  background-color: #5cadff;
+}
+.bgc-Dark-Primary{
+  background-color: #2b85e4;
+}

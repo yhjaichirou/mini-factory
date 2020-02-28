@@ -1,0 +1,70 @@
+/* pages/first/first.wxss */
+@import "/common/css/main.wxss";
+page{
+  background-color: #5cadff;
+  height:100%;
+}
+.body{
+  height: 83%;
+  padding: 26rpx;
+  position: relative;
+}
+.main{
+  background-color:white;
+  border-radius: 20rpx;
+  height: 1000rpx;
+  box-shadow: 0rpx 0rpx 30rpx 4rpx #1a86f1;
+  border: 1rpx solid #5cadff;
+  padding: 20rpx;
+}
+
+.center{
+  text-align: center;
+}
+.play{
+  display: block;
+  position: relative;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 10;
+  color: #5cadff;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -52rpx;
+text-align: center;
+line-height: 100rpx;
+font-size: 30rpx;
+border: 2rpx solid #5cadff;
+}
+
+.t-headr{
+  text-align: center;
+  font-weight: bold;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #eee;
+
+}
+.t-con{
+  height: 400rpx;
+ 
+  display: flex;
+  
+  align-items: center;
+  margin: 20rpx 0rpx;
+
+}
+
+.t-con .t-con-v{
+   background-color: #f1bd6e;
+    border-radius: 10rpx;
+     height: 100%;
+     flex: 1;
+     font-size:30rpx;
+     text-align: center;
+     line-height: 400rpx;
+}
+.t-con-left{
+  margin-right: 10rpx;
+}
