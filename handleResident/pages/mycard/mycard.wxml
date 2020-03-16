@@ -1,0 +1,68 @@
+<!--pages/mycard/mycard.wxml-->
+<view class="card-contain">
+  <view class="card ">
+    <view class="card-f-up">
+      <view class="card-f-up-left">
+        <view class="card-text">
+          <label style="width:40rpx;min-width:60rpx;">姓 名:</label>
+          <text>杨海军</text>
+        </view>
+        <view class="card-text">
+          <label>性 别:</label>
+          <text>男</text>
+        </view>
+        <view class="card-text">
+          <label>出 生:</label>
+          <text>1991.10.15</text>
+        </view>
+        <view class="card-text">
+          <label>住 址:</label>
+          <text style="width:200rpx;word-wrap: break-word;">乌兰察布市集宁区团结路瑞丰月圆</text>
+        </view>
+      </view>
+
+      <view class="card-f-up-right">
+        <image class="small-img" src="../../common/img/default.png"></image>
+      </view>
+    </view>
+
+    <view class="card-f-buttom card-text">
+      <label>身份证号:</label>
+      <text class="text-msg">123123123123123</text>
+    </view>
+  </view>
+
+  <view class="card card-last">
+    <view class=""> sfsdf</view>
+
+    <view class="card-f-buttom ">
+      <view class="card-text">
+        <label>发证机关:</label>
+        <text class="text-msg">乌兰察布市集宁区公安局</text>
+      </view>
+      <view class="card-text">
+        <label>有效期限:</label>
+        <text class="text-msg">2019.10.7-2029.10.8</text>
+      </view>
+
+    </view>
+  </view>
+
+</view>
+<view class="buttom">
+  <view class="buttom-c-up">
+    <view>
+      <label>证件申领/补领地址：
+        <van-button round type="primary" size="mini" class="gotomap">点击导航</van-button>
+      </label>
+      <view>乌兰察布市集宁区桥东街道派出所</view>
+      <view>电话：0474-8211313</view>
+    </view>
+    <view>
+      <image class="code" src="../../common/img/default.png"></image>
+      <view style="color:#aaa;font-size:24rpx;">证件已经领取</view>
+    </view>
+  </view>
+
+  <view class="msg">注：居住证的签证/变更/换领/补领，到上方地址办理。</view>
+</view>

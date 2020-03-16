@@ -1,0 +1,25 @@
+<!--pages/apply/apply.wxml-->
+<view class="contain">
+  <view class="content">
+    <view class="title"> 身份证拍照</view>
+    <view class="pic">
+      <view class="pic-t">
+        <image src="../../common/img/idcard_z.png"></image>
+      </view>
+      <view>
+       <van-button class="pic-t btn-bc-blue" type="primary" size="small" bindtap="gotonext" >正面拍照</van-button>
+      </view>
+       <view class="pic-t">
+        <image src="../../common/img/idcard_b.png"></image>
+      </view>
+      <view>
+       <van-button class="btn-bc-blue" type="primary" size="small" bindtap="gotonext" >背面拍照</van-button>
+      </view>
+    </view>
+
+  </view>
+  <view class="next">
+    <van-button class="gotonext" type="primary" size="small" bindtap="gotonext" class="btn-pad">下一步</van-button>
+  </view>
+
+</view>

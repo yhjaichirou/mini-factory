@@ -1,0 +1,28 @@
+@import "/common/css/main.wxss";
+
+page{
+  height: 100%;
+  width: 100%;
+}
+.bgp {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bgp image {
+  width: 100%;
+  
+}
+
+.usermotto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 38rpx;
+}
+.mycard .van-button--primary,.applycard .van-button--primary{
+  width: 344rpx;
+}

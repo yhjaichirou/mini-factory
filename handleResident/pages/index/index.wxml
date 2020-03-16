@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="bgp">
+<image src="../../common/img/bg.png" class="bg"  mode='widthFix'></image>
+</view>
+<view class="container" style="background-img:url('../../common/img/bg.png)">
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+  <view class="userinfo">
+    <block wx:if="{{hasUserInfo}}">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  
+   </view>
+  <view class="usermotto">
+   <van-button class="mycard" bindgetuserinfo type="primary" size="small" bindtap="gotoMycard">我的居民证</van-button>
+   <van-button class="applycard" type="primary" size="small" style="margin-top:20rpx;" bindtap="gotoApplycard">申请居民证</van-button>
+  </view>
+</view>
+
+

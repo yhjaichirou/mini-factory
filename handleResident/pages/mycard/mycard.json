@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-button": "/common/module/weapp/dist/button/index"
+  },
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "我的居民证",
+    "backgroundColor": "#eee",
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "black"
+}
