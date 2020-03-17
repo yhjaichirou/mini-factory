@@ -9,7 +9,9 @@
     "van-picker": "/common/module/weapp/dist/picker/index",
     "van-dropdown-menu": "/common/module/weapp/dist/dropdown-menu/index",
     "van-dropdown-item": "/common/module/weapp/dist/dropdown-item/index",
-    "van-action-sheet": "/common/module/weapp/dist/action-sheet/index"
+    "van-action-sheet": "/common/module/weapp/dist/action-sheet/index",
+    "van-popup": "/common/module/weapp/dist/popup/index",
+    "van-datetime-picker": "/common/module/weapp/dist/datetime-picker/index"
   },
   "navigationBarBackgroundColor": "#eee",
   "navigationBarTitleText": "居民证申请",

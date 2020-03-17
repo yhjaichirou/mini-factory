@@ -58,4 +58,19 @@
   -webkit-transform: scaleY(0.5);
   transform: scaleY(0.5);
 }
+
+.noborder .van-button__text {
+  border: none;
+  background-color: transparent;
+  color: #3a78db;
+}
+.noborder .van-button--primary {
+  border: none !important;
+  background-color: transparent;
+}
+.noborder .van-button--primary:hover {
+  border: none !important;
+  background-color: transparent;
+}
+
 /* vant 表单中处理 checkbox 和 radio */

@@ -1,2 +1,63 @@
-<!--pages/apply/live/live.wxml-->
-<text>pages/apply/live/live.wxml</text>
+<view class="contain">
+  <view class="content">
+    <view class="title">基本信息</view>
+    <view class="form">
+
+      <van-cell-group>
+
+        <van-field value="{{ birth }}" label="来本地日期" placeholder="请选择日期" disabled required use-button-slot>
+          <van-button class="noborder" slot="button" size="small" type="primary" bind:click="choiceBirth">选择</van-button>
+        </van-field>
+        <van-field value="{{ liveRefuse }}" label="居住事由" type="textarea" placeholder="如果没有填无" bind:input="inputOldName" required maxlength='10' autosize/>
+
+        <van-field value="{{  liveType }}" label="居住方式" placeholder="请选择居住方式" disabled required use-button-slot>
+          <van-button class="noborder" slot="button" size="small" type="primary" bind:click="choiceLiveType">选择</van-button>
+        </van-field>
+
+        <van-field value="{{ householdNum }}" label="住所类型" placeholder="请选择住所类型" disabled required use-button-slot>
+          <van-button class="noborder" slot="button" size="small" type="primary" bind:click="choiceHouseholdNum">选择</van-button>
+        </van-field>
+
+        <van-field value="{{ mailbox }}" label="居住详细地址" placeholder="请输入电子邮箱" bind:input="inputMailBox" />
+
+        <view class="v-cent">
+          <view class="v-cent-label">
+            <view class="label">共同居住者</view>
+            <view class="addPel">
+              <van-icon name="plus" />
+            </view>
+          </view>
+          <view class="v-cent-pels">aaa</view>
+          <view class="v-cent-pels">aaa</view>
+        </view>
+
+        <van-field value="{{ mailbox }}" label="居住详细地址" placeholder="请输入电子邮箱" bind:input="inputMailBox" />
+        <van-field value="{{ urgentName }}" label="紧急联系人" placeholder="请输入紧急联系人" bind:input="inputUrgentName" />
+        <van-field value="{{ urgentPhone }}" type="number" maxlength='11' label="紧急联系电话" placeholder="请输入紧急联系人电话" bind:input="inputUrgentPhone" />
+
+      </van-cell-group>
+
+      <view style="line-height:24px;padding:10px 16px;font-size:24rpx;text-align: center;color: #5cadff;">居民证办理须知</view>
+      <van-checkbox value="{{ isread }}" shape="square" bind:change="onIsreadChange" class="v-checkbox">
+        我已经阅读居住办理须知，并保证以上申报内容真确属实
+      </van-checkbox>
+
+    </view>
+
+    <!-- 底部弹框 -->
+    <van-popup show="{{ pickerShow }}" position="bottom">
+      <block wx:if="{{!isDatePicker}}">
+        <van-picker show-toolbar title="{{pickerTitle}}" columns="{{ pickerColumns }}" bind:cancel="onPickerCancel" bind:confirm="onPickerConfirm" bind:change="onPickerChange" />
+      </block>
+      <block wx:else="{{isDatePicker}}">
+        <van-datetime-picker type="date" title="{{pickerTitle}}" bind:cancel="onDatePickerCancel" bind:confirm="onDatePickerConfirm" value="{{ currentDate }}" bind:input="onDatePickeInput" min-date="{{ minDate }}" formatter="{{ formatter }}" />
+      </block>
+    </van-popup>
+
+
+  </view>
+  <view class="next">
+    <van-button class="gotonext" type="primary" size="small" bindtap="gotonext" class="btn-pad">下一步</van-button>
+  </view>
+
+</view>

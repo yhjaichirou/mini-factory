@@ -8,6 +8,15 @@ const formatTime = date => {
 
   return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
 }
+const formatDate = (date,stemp) => {
+  const year = date.getFullYear()
+  const month = date.getMonth() + 1
+  const day = date.getDate()
+  const hour = date.getHours()
+  const minute = date.getMinutes()
+  const second = date.getSeconds()
+  return [year, month, day].map(formatNumber).join(stemp);
+}
 
 const formatNumber = n => {
   n = n.toString()
@@ -198,6 +207,7 @@ function showError(str, funcSuccess = () => { }) {
 
 module.exports = {
   formatTime: formatTime,
+  formatDate: formatDate,
   redirect: redirect,
   login: login,
   getUserInfo: getUserInfo,
