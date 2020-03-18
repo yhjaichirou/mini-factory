@@ -63,11 +63,11 @@ Page({
   },
   gotoApplycard: function (e){
     let that = this;
-    if (!isLogin()) {
+    if (!this.isLogin()) {
       getUserInfo();
     } else {
       wx.navigateTo({
-        url: '../first/first',
+        url: '../apply/apply',
       })
     }
     

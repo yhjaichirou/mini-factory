@@ -1,12 +1,12 @@
 {
   "pages": [
-    "pages/apply/live/live",
+    "pages/index/index",
     "pages/apply/basic/basic",
     "pages/apply/apply",
     "pages/mycard/mycard",
-    "pages/index/index",
-    "pages/first/first"
-    
+   
+    "pages/first/first",
+    "pages/apply/live/live"
   ],
   "window": {
     "backgroundTextStyle": "light",
